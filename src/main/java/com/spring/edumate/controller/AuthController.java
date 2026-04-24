@@ -54,18 +54,4 @@ public class AuthController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/test/student")
-    public ResponseEntity<String> studentEndpoint() {
-        return ResponseEntity.ok("Student access granted");
-    }
-
-    @GetMapping("/test/instructor")
-    public ResponseEntity<String> instructorEndpoint() {
-        return ResponseEntity.ok("Instructor access granted");
-    }
-
-    @GetMapping("/test/admin")
-    public ResponseEntity<String> adminEndpoint() {
-        return ResponseEntity.ok("Admin access granted");
-    }
 }
